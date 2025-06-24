@@ -1,0 +1,19 @@
+﻿<h2>Cadastro</h2>
+
+<form method="post" asp-action="SalvarCadastro">
+	<input type="hidden" name="cpf" value="@ViewBag.CPF" />
+	<p>Nome: <input type="text" name="nome" /></p>
+	<p>Email: <input type="email" name="email" /></p>
+	<p>Empresa: <input type="text" name="empresa" /></p>
+	<p>Cargo: <input type="text" name="cargo" /></p>
+	<p>Estado: <input type="text" name="estado" /></p>
+	<p>UF: <input type="text" name="uf" /></p>
+	<p>É expositor?
+		<input type="radio" name="expositor" value="true" /> Sim
+		<input type="radio" name="expositor" value="false" /> Não
+	</p>
+	<p>
+		CNPJ (se expositor): <input type="text" name="cnpj" />
+	</p>
+	<button type="submit">Continuar</button>
+</form>
